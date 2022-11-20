@@ -33,7 +33,7 @@ export default function Header() {
 
           </div>
         </div>
-        <img className='intro-right' src="../images/bg-pattern-intro-right-desktop.svg" alt="" />
+        {/* <img className='intro-right' src="../images/bg-pattern-intro-right-desktop.svg" alt="" /> */}
       </div>
     </Headerstyle>
   )
@@ -42,7 +42,7 @@ export default function Header() {
 
 const Headerstyle = styled.div`
 font-family: 'Karla', sans-serif;
-
+margin-bottom: 4rem;
 .nav{
   width: 90%;
   margin: auto;
@@ -80,7 +80,7 @@ letter-spacing: 2px;
   }
 }
 /* nav media qurery */
-@media(max-width:800px){
+@media(max-width:880px){
   .nav-icon{
     display: block;
     cursor: pointer;
@@ -97,6 +97,7 @@ letter-spacing: 2px;
   flex-direction: column;
   justify-content: flex-start;
 padding-top: 2rem;
+z-index: 20;
   .nav-item{
    margin: 2rem 0rem;
     color: #fff;
@@ -184,12 +185,11 @@ font-family: 'DM Serif Display', serif;
 /* media query */
 @media(max-width:1100px){
   .head{
-    height: 100vh;
+height: 100vh;
   }
 }
 @media(max-width:910px){
   .head{
-    min-height: 270vh;
     width: 100%;
     margin: 0;
     .content{
@@ -199,13 +199,11 @@ font-family: 'DM Serif Display', serif;
       
       .content-image{
         flex: 4;
-        order: 1;
         width: 100%;
-        height: 100vh;
-      margin-top: -5rem;
+        height: 60vh;
     }
     .content-text{
-     order: 3;
+     
      text-align: center;
      padding: 0rem 2rem;
      h1{
@@ -220,7 +218,7 @@ font-family: 'DM Serif Display', serif;
 }
 @media(max-width:600px){
 .head{
-  min-height: 220vh;
+  /* min-height: 220vh; */
   .content{
     .content-text{
       h1{
